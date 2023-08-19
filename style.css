@@ -61,7 +61,7 @@ body{
 
 #navbar li{
     list-style: none;
-    padding: 0px 20px;
+    padding: 5px 20px;
 }
 
 #navbar li a{
@@ -90,6 +90,14 @@ body{
     left: 0px;
     transition: 0.3s ease;
 
+}
+
+#mobile{
+    display: none;   
+}
+
+#close{
+    display: none;
 }
 
 #hero{
@@ -247,7 +255,7 @@ body{
     justify-content: center;
     align-items: right;
     text-align: right;
-    background-image: url("C:/Users/dyuti/Desktop/ecombg.jpg");
+    background-image: url("img/banner/b2.jpg");
     width: 100%;
     height: 37vh;
     background-size: cover;
@@ -573,6 +581,11 @@ footer .copyright{
 }
 
 @media (max-width: 799px) {
+
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -586,9 +599,70 @@ footer .copyright{
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0;
     }
 
     #navbar li{
         margin-bottom: 20px;
     }
-}
+
+    #mobile{
+        display: flex;
+        align-items: center;   
+    }
+
+    #mobile i{
+        color: #000000;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+
+    }
+    #lg-btn{
+        display: none;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;       
+    }
+
+    #product1 .pro-container {
+        justify-content: space-around;   
+    }
+
+    #banner {
+        height: 28vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    
+    #banner3 .card {
+        display: flex;
+        height: 220px;
+        margin: 10px;
+    }
+
+    #banner3 {
+        padding: 0 30px;
+    }
+    
+}    
